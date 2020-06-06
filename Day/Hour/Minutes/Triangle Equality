@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+
+     int main() {
+	int a,b,c;
+
+	printf("a,b ve c degerlerini giriniz \n");
+
+	scanf("%d %d %d" ,&a ,&b ,&c);
+
+
+
+	 if ((c>=fabs(a-b))&&(c<=a+b))
+
+	   printf("cizilen ucgen ucgen esitsizligine uyar");
+
+     else { 
+
+	 printf("cizilen ucgen ucgen esitsizligine uymaz");
+	 return 0;}
+
+
+	if ((a==b)&&(a==c)&&(b==c))
+
+       printf("\nucgen eskenar ucgendir");
+
+    else if ((a==b)||(a==c)||(b==c))
+
+       printf("\nucgen ikizkenar ucgendir");
+
+    else 
+
+       printf("\nucgen cesitkenar ucgendir");
+
+     return 0;
+}
