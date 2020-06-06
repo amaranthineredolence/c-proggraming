@@ -1,52 +1,37 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+#include <stdio.h>
+#include <math.h>
+     
+     int main() {
+	int a,b,c;
+	
+	printf("a,b ve c degerlerini giriniz \n");
+	
+	scanf("%d %d %d" ,&a ,&b ,&c);
+     
+	 
+	 
+	 if ((c>=fabs(a-b))&&(c<=a+b))
+	   
+	   printf("cizilen ucgen ucgen esitsizligine uyar");
+	
+     else { 
+	 
+	 printf("cizilen ucgen ucgen esitsizligine uymaz");
+	 return 0;}
+    
+	  
+	if ((a==b)&&(a==c)&&(b==c))
+      
+       printf("\nucgen eskenar ucgendir");
+    
+    else if ((a==b)||(a==c)||(b==c))
+       
+       printf("\nucgen ikizkenar ucgendir");
+       
+    else 
+       
+       printf("\nucgen cesitkenar ucgendir");
+	   
+     return 0;
+}
+	
